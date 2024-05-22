@@ -176,7 +176,7 @@ export default class CardItem extends HTMLElement {
             class="lazyload" 
             aria-label="image of ${this._card.name}" 
             tabindex="0" 
-            src="${CONFIG.BASE_IMAGE_URL.SMALL + this._card.pictureId}" 
+            data-src="${CONFIG.BASE_IMAGE_URL.SMALL + this._card.pictureId}" 
             crossorigin="anonymous" 
             alt="image of ${this._card.name}"
             style="width: 100%; max-height: 250px; object-fit: cover;"
