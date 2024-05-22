@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable import/no-cycle */
 import RestaurantsSource from '../../data/restaurants-source';
 import UrlParser from '../../routes/url-parser';
@@ -84,13 +85,11 @@ const Detail = {
   },
 
   async showAlert(status, message) {
-    const Swal = await import('sweetalert2');
     Swal.fire({
       position: 'center',
       icon: `${status}`,
       title: `${message}`,
       text: 'Please try again later.',
-      showConfirmButton: true,
       timer: 1500,
     });
   },
